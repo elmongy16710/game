@@ -1,0 +1,227 @@
+@font-face {
+    font-family: cairo;
+    src : url(../fonts/Cairo-SemiBold.ttf);
+}
+body {
+    font-family: cairo;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+/* الجزء العلوى */
+header {
+    background-image: url(../images/bannger-bj.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.brand {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    border-bottom : 5px solid #474d55;
+    padding-bottom: 35px;
+}
+.brand .logo {
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+.header-desc {
+    font-size: 18px;
+    color: #acacac;
+    width: 50%;
+    margin: 0 auto;
+}
+.header-h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;;
+}
+.counter .countdown-amount {
+    color: #ffce00;
+    font-size: 60px;
+    font-weight: bold;
+
+}
+.counter .countdown-period {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.counter .countdown-section {
+    margin: 0 30px;
+    display: inline-block;
+}
+.counter .countdown-section span{
+    display:block;
+    
+}
+.counter {
+    margin-top: 40px;
+}
+.notification {
+    margin-top: 40px;
+    position: relative;
+    top: 61px;
+}
+.notification > p {
+    color: #fff;
+    font-size: 19px;
+}
+.notification  > form , .footer-top form {
+    display: inline-block;
+}
+.notification  > form .input-groub , .footer-top form .input-groub{
+    display: flex;
+}
+.notification  > form input[type="text"] , .footer-top .input-groub input {
+    width: 300px;
+    border-radius: 0;
+    color: #e6e6e6;
+    padding: 15px 10px;
+    border: 2px solid #e6e6e6;
+    box-shadow: none;
+    color: #555555;
+}
+.notification-img {
+    background-color: #ffce00;
+    padding: 10px;
+    display: inline-block;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+/* نهاية الجزء العلوى */
+
+/* قسم مميزات اللعبة */
+
+.features {
+    padding: 100px 0 30px 0 ;
+}
+.custom-heading {
+    color: #555555;
+    font-size: 36px;
+    margin: 25px 0;
+}
+.features {
+    text-align: right;
+}
+.media-item {
+    padding: 25px 5px;
+    border: 5px solid #fafafa;
+    color: #a1a1a1;
+    margin-bottom: 30px;
+}
+.media-item h3{
+    color: #555555;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.media-item p{
+    font-size: 15px;
+    color: #a1a1a1;
+    
+}
+.media-item img {
+    margin-left: 20px;
+}
+.features > h2 {
+    margin-bottom: 50px;
+}
+.features div[class*="col-"]:nth-child(even) .media-body{
+    text-align: left;
+    margin-left: 30px;
+}
+.features div[class*="col-"]:nth-child(even) .media img{
+    margin-left: 30px;
+}
+/* نهاية قسم مميزات اللعبة */
+/* قسم تذيل الصفحة */
+footer {
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+.footer-top .overlay{
+    padding: 65px 0;
+    background-color: rgba(255, 204 , 0 , .7);
+}
+.footer-top .custom-haeding {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.footer-top .notification-img {
+    background-color: #393939;
+}
+.footer-top .input-groub input {
+    border: none;
+}
+footer .contact {
+    background-color: rgba(28, 28, 28, .9);
+    padding: 100px 0 30px 0;
+}
+footer .contact .custom-heading {
+    color: #fff;
+    font-size: 30px;
+}
+footer .contact .list-inline-item {
+    width: 70px;
+    height: 70px;
+    background-color: #3e4243;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+footer .contact .list-inline-item a {
+    color: white;
+    line-height: 70px;
+    font-size: 30px;
+}
+.footer-line {
+    margin-top: 50px;
+    width: 40%;
+    background: #4b4c4c;
+}
+.footer-mail {
+    color: #b4b4b4;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-mail i {
+    color: #ffce00;
+}
+#up-form , #footer-form{
+    position: relative;
+}
+#up-form #-error  , #footer-form #-error{
+    position: absolute;
+    top: 69px;
+    color: #ffce00;
+}
+#footer-form #-error {
+    color: #fff;
+}
+input:focus {
+    box-shadow: none !important;
+    border-radius: 2px;
+}
+/* نهاية قسم تذيل الصفحة */
+
+/* Media Query */
+@media (max-width : 767px) {
+    .header-desc {
+        width: 70%;
+    }
+}
+@media(max-width : 575px) {
+    .footer-top .custom-haeding {
+        font-size: 26px;
+    }
+}
+@media(min-width : 360px) and (max-width : 640px) {
+    
+}
+/* End Media Query */
